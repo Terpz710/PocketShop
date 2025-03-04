@@ -32,6 +32,7 @@ class ShopForm {
     public function openMainShop(Player $player) : void{
         $form = new SimpleForm();
         $form->setTitle("Shop");
+        $form->setContent("Choose a category:");
 
         foreach ($this->config->getAll() as $category => $data) {
             $form->addButton($category, 0, $data["image"] ?? "");
