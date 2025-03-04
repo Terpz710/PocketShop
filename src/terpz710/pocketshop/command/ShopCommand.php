@@ -8,7 +8,7 @@ use pocketmine\command\CommandSender;
 
 use pocketmine\player\Player;
 
-use terpz710\pocketshop\PocketShop;
+use terpz710\pocketshop\form\ShopForm;
 
 use CortexPE\Commando\BaseCommand;
 
@@ -24,6 +24,6 @@ class ShopCommand extends BaseCommand {
             return;
         }
 
-        PocketShop::getInstance()->getShopForm()->openMainShop($sender);
+        ShopForm::getInstance()->openMainShop($sender);
     }
 }
