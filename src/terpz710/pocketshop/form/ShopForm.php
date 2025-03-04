@@ -10,6 +10,7 @@ use pocketmine\item\Item;
 use pocketmine\item\StringToItemParser;
 
 use pocketmine\utils\Config;
+use pocketmine\utils\SingletonTrait;
 
 use terpz710\pocketshop\PocketShop;
 
@@ -20,11 +21,12 @@ use terpz710\pocketforms\ModalForm;
 use terpz710\mineconomy\Mineconomy;
 
 class ShopForm {
+    use SingletonTrait;
 
     private Config $config;
 
-    public function __construct(protected PocketShop $plugin) {
-        $this->config = new Config($this->plugin->getDataFolder() . "shop.yml", Config::YAML);
+    public function __construct() {
+        $this->config = new Config(PocketShop::getInstance()->getDataFolder() . "shop.yml");
     }
 
     public function openMainShop(Player $player) : void{
