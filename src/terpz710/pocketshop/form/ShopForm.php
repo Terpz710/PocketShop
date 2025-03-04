@@ -62,7 +62,7 @@ class ShopForm {
         $form->setTitle($category);
 
         foreach ($items as $item) {
-            $form->addButton("{$item["name"]} - ${$item["price"]}", 0, $item["item_image"]);
+            $form->addButton($item["name"] . " - $" . $item["price"], 0, $item["item_image"] ?? "");
         }
 
         $form->setCallback(function (Player $player, ?int $data) use ($category, $items) {
@@ -80,7 +80,7 @@ class ShopForm {
     private function openAmountInputForm(Player $player, string $category, array $item) : void{
         $form = new CustomForm();
         $form->setTitle("Enter Amount");
-        $form->addLabel("Item: {$item["name"]}\nPrice per unit: ${$item["price"]}");
+        $form->addLabel("Item: {$item["name"]}\nPrice per unit: $" . $item["price"]);
         $form->addInput("Enter quantity", "1", "1");
 
         $form->setCallback(function (Player $player, ?array $data) use ($category, $item) {
@@ -101,7 +101,7 @@ class ShopForm {
         $totalPrice = $item["price"] * $amount;
         $form = new ModalForm();
         $form->setTitle("Confirm Purchase");
-        $form->setContent("Are you sure you want to buy {$amount}x {$item["name"]} for ${$totalPrice}?");
+        $form->setContent("Are you sure you want to buy {$amount}x {$item["name"]} for $" . $totalPrice . "?");
         $form->setButton1("Yes");
         $form->setButton2("No");
 
@@ -131,7 +131,7 @@ class ShopForm {
         if ($itemInstance instanceof Item) {
             $itemInstance->setCount($amount);
             $player->getInventory()->addItem($itemInstance);
-            $player->sendMessage("You bought {$amount}x {$item["name"]} for ${$totalPrice}.");
+            $player->sendMessage("You bought {$amount}x {$item["name"]} for $" . $totalPrice . ".");
         } else {
             $player->sendMessage("Failed to process item.");
         }
