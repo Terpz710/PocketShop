@@ -38,7 +38,7 @@ final class PocketShop extends PluginBase {
         return self::$instance;
     }
 
-    public function getFormShop() : ShopForm{
+    public function getShopForm() : ShopForm{
         return $this->shop;
     }
 }
