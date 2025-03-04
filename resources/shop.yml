@@ -1,0 +1,103 @@
+Weapons:
+  image: "textures/items/diamond_sword" # Category image
+  items:
+    - name: "Diamond Sword"
+      id: "diamond_sword"
+      price: 500
+      item_image: "textures/items/diamond_sword"
+    - name: "Iron Sword"
+      id: "iron_sword"
+      price: 250
+      item_image: "textures/items/iron_sword"
+    - name: "Bow"
+      id: "bow"
+      price: 200
+      item_image: "textures/items/bow"
+    - name: "Arrow (16x)"
+      id: "arrow"
+      price: 50
+      item_image: "textures/items/arrow"
+
+Tools:
+  image: "textures/items/diamond_pickaxe"
+  items:
+    - name: "Diamond Pickaxe"
+      id: "diamond_pickaxe"
+      price: 600
+      item_image: "textures/items/diamond_pickaxe"
+    - name: "Iron Pickaxe"
+      id: "iron_pickaxe"
+      price: 300
+      item_image: "textures/items/iron_pickaxe"
+    - name: "Diamond Axe"
+      id: "diamond_axe"
+      price: 550
+      item_image: "textures/items/diamond_axe"
+    - name: "Iron Axe"
+      id: "iron_axe"
+      price: 275
+      item_image: "textures/items/iron_axe"
+
+Armor:
+  image: "textures/items/diamond_chestplate"
+  items:
+    - name: "Diamond Helmet"
+      id: "diamond_helmet"
+      price: 400
+      item_image: "textures/items/diamond_helmet"
+    - name: "Diamond Chestplate"
+      id: "diamond_chestplate"
+      price: 800
+      item_image: "textures/items/diamond_chestplate"
+    - name: "Diamond Leggings"
+      id: "diamond_leggings"
+      price: 700
+      item_image: "textures/items/diamond_leggings"
+    - name: "Diamond Boots"
+      id: "diamond_boots"
+      price: 350
+      item_image: "textures/items/diamond_boots"
+    - name: "Iron Chestplate"
+      id: "iron_chestplate"
+      price: 400
+      item_image: "textures/items/iron_chestplate"
+
+Food:
+  image: "textures/items/cooked_beef"
+  items:
+    - name: "Steak (10x)"
+      id: "cooked_beef"
+      price: 100
+      item_image: "textures/items/cooked_beef"
+    - name: "Golden Apple"
+      id: "golden_apple"
+      price: 500
+      item_image: "textures/items/golden_apple"
+    - name: "Enchanted Golden Apple"
+      id: "enchanted_golden_apple"
+      price: 2500
+      item_image: "textures/items/enchanted_golden_apple"
+    - name: "Bread (5x)"
+      id: "bread"
+      price: 50
+      item_image: "textures/items/bread"
+
+Blocks:
+  image: "textures/blocks/stone"
+  items:
+    - name: "Stone (32x)"
+      id: "stone"
+      price: 75
+      item_image: "textures/blocks/stone"
+    - name: "Dirt (32x)"
+      id: "dirt"
+      price: 50
+      item_image: "textures/blocks/dirt"
+    - name: "Glass (16x)"
+      id: "glass"
+      price: 100
+      item_image: "textures/blocks/glass"
+    - name: "Obsidian (4x)"
+      id: "obsidian"
+      price: 500
+      item_image: "textures/blocks/obsidian"

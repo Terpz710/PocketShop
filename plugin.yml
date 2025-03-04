@@ -1,0 +1,9 @@
+name: PocketShop
+version: 1.0.0
+author: Terpz710
+api: 5.0.0
+main: terpz710\pocketshop\PocketShop
+
+permissions:
+  pocketshop.cmd:
+    default: true
